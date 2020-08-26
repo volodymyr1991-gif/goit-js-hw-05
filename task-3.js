@@ -1,5 +1,5 @@
 class Storage {
-  constructor([...items]) {
+  constructor(items) {
     this.items = items;
 
   }
@@ -12,7 +12,8 @@ class Storage {
    this.items.push(ter)
   }
   removeItem(del){
-    for(let i=0; i<this.items.length; i+=1){
+    for(let i=0; i<this.items
+      .length; i+=1){
       if(del===this.items[i]){
         this.items.splice(i,1);
       }
